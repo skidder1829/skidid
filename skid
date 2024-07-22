@@ -7,21 +7,21 @@ local inf = math.huge
 getgenv().Settings = {
     ["FearLas"] = {
         ["Enabled"] = false,
-        ["DOT"] = true,
-        ["AIRSHOT"] = false,
+        ["DOT"] = false,
+        ["AIRSHOT"] = true,
         ["Prediction"] = {
             ["Horizontal"] = 0.185,
             ["Vertical"] = 0.1,
         },
         ["CamPrediction"] = {
             ["Prediction"] = {
-                ["Horizontal"] = 0.185,
+                ["Horizontal"] = 0.149,
                 ["Vertical"] = 0.1,
             },
         },
         ["NOTIF"] = true,
-        ["AUTOPRED"] = false,
-        ["AdvancedAutoPred"] = false,
+        ["AUTOPRED"] = true,
+        ["AdvancedAutoPred"] = true,
         ["FOV"] = inf,
         ["RESOLVER"] = false,
         ["LOCKTYPE"] = "Namecall",
@@ -91,10 +91,10 @@ getgenv().Settings = {
 		["Color"] = Color3.fromRGB(255,255,255),
 	},
 	["Misc"] = {
-	    ["NoDelay"] = false,
+	    ["NoDelay"] = true,
 	    ["AutoReload"] = false,
 	    ["AutoAir"] = {
-	        ["Enabled"] = false,
+	        ["Enabled"] = true,
 	        ["Interval"] = 0.5,
 	    },
 	    ["CMDS"] = { 
@@ -104,7 +104,7 @@ getgenv().Settings = {
 	   },
 	},
 	["Checks"] = { --entirely not
-	    ["UnlovkOnKO"] = false,
+	    ["UnlovkOnKO"] = true,
 	    ["TrashTalkOnKO"] = false,
 	},
 	["Resolution"] = {
@@ -125,15 +125,15 @@ getgenv().Settings = {
             ["Color"] = Color3.fromRGB(4, 0, 255)
         },
         ["Fog Modifications"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = yes,
             ["Color"] = Color3.fromRGB(4, 0, 255),
-            ["Start"] = 15,
-            ["End"] = 100 
+            ["Start"] = 0,
+            ["End"] = 0, 
         },
         ["ColorCorrection"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = true,
             ["Brightness"] = 0,
-            ["Saturation"] = 5,
+            ["Saturation"] = 10,
             ["Contrast"] = 2,
         },
     },
